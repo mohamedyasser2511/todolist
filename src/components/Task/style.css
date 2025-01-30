@@ -1,0 +1,240 @@
+.todo-app {
+  max-width: 1000px;
+  background-color: #f4f4f4;
+  margin: auto;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #007bff;
+}
+
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  background: #28a745;
+  color: white;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #218838;
+}
+
+.filters {
+  margin-bottom: 20px;
+}
+
+.filters button {
+  padding: 8px 16px;
+  margin: 5px;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.filters button.active {
+  background: #28a745;
+  color: white;
+}
+
+.filters button:hover {
+  background: #0056b3;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  padding: 14px 20px;
+  text-align: center;
+  font-size: 16px;
+}
+
+th {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:last-child {
+  border-bottom: none;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+.td-text{
+  cursor: pointer;
+}
+.toggle-btn {
+  background: #ffc107;
+  color: black;
+  border-radius: 5px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.toggle-btn:hover {
+  background: #e0a800;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  z-index: 1;
+  min-width: 120px;
+}
+
+.dropdown-item {
+  white-space: nowrap;
+  background: #f9f9f9;
+  color: black;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.dropdown-item:hover {
+  background: #f1f1f1;
+}
+
+.delete-icon {
+  cursor: pointer;
+  margin-left: 10px;
+  color: #f00;
+}
+
+.delete-icon:hover {
+  color: rgb(185, 19, 19);
+}
+
+.toggle-icon {
+  cursor: pointer;
+  margin-left: 10px;
+  color: #4caf50;
+}
+
+.toggle-icon:hover {
+  color: #388e3c;
+}
+
+@media (max-width: 768px) {
+  .input-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .filters {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .filters button {
+    width: 100%;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  th,
+  td {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .dropdown-menu {
+    min-width: 100px; 
+  }
+
+  .toggle-btn {
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+
+  input {
+    font-size: 14px;
+  }
+
+  .filters button {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  th,
+  td {
+    font-size: 12px;
+  }
+
+  .input-group {
+    gap: 8px;
+  }
+
+  table {
+    font-size: 12px;
+  }
+}
