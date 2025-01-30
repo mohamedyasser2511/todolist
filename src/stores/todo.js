@@ -1,4 +1,3 @@
-// stores/todo.js
 import { defineStore } from 'pinia';
 
 export const useTodoStore = defineStore('todo', {
