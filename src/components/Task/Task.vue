@@ -1,4 +1,5 @@
 <template>
+  <h1 style="text-align: center;">Welcome to my Todolist</h1>
   <div class="todo-app">
     <h2>To-Do List</h2>
     <div class="input-group">
@@ -22,8 +23,8 @@
       </thead>
       <tbody>
         <tr v-for="task in filteredTasks" :key="task.id">
-          <td :class="{ completed: task.completed }" @click="toggleTask(task)">
-            <span class="td-text">{{ task.text }}</span>
+          <td >
+            <span style="cursor: pointer;" :class="{ completed: task.completed } " @click="toggleTask(task)">{{ task.text }}</span>
           </td>
           <td>{{ task.completed ? '✅ Completed' : '❌ Not Completed' }}</td>
           <td>

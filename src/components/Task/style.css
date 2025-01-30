@@ -105,9 +105,6 @@ tbody tr:last-child {
   text-decoration: line-through;
   color: gray;
 }
-.td-text{
-  cursor: pointer;
-}
 .toggle-btn {
   background: #ffc107;
   color: black;
